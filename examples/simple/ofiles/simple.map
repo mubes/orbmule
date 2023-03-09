@@ -435,10 +435,10 @@ LOAD linker stubs
                                          0x4a (size before relaxing)
  .comment       0x0000000000000049       0x4a ofiles/./src/main.o
 
-.debug_info     0x0000000000000000      0x57d
- .debug_info    0x0000000000000000      0x398 ofiles/./src/itm_messages.o
- .debug_info    0x0000000000000398      0x1bf ofiles/./src/main.o
- .debug_info    0x0000000000000557       0x26 ofiles/system/startup_ARMCM4.o
+.debug_info     0x0000000000000000      0x579
+ .debug_info    0x0000000000000000      0x396 ofiles/./src/itm_messages.o
+ .debug_info    0x0000000000000396      0x1bd ofiles/./src/main.o
+ .debug_info    0x0000000000000553       0x26 ofiles/system/startup_ARMCM4.o
 
 .debug_abbrev   0x0000000000000000      0x273
  .debug_abbrev  0x0000000000000000      0x155 ofiles/./src/itm_messages.o
@@ -515,12 +515,11 @@ LOAD linker stubs
  .debug_line    0x000000000000078a       0x67 ofiles/system/startup_ARMCM4.o
 
 .debug_str      0x0000000000000000     0x79a7
- .debug_str     0x0000000000000000     0x386a ofiles/./src/itm_messages.o
-                                       0x39d8 (size before relaxing)
- .debug_str     0x000000000000386a     0x4117 ofiles/./src/main.o
-                                       0x7a27 (size before relaxing)
- .debug_str     0x0000000000007981       0x26 ofiles/system/startup_ARMCM4.o
-                                         0x5b (size before relaxing)
+ .debug_str     0x0000000000000000     0x3835 ofiles/./src/itm_messages.o
+                                       0x39a3 (size before relaxing)
+ .debug_str     0x0000000000003835     0x4117 ofiles/./src/main.o
+                                       0x79f2 (size before relaxing)
+ .debug_str     0x000000000000794c       0x5b ofiles/system/startup_ARMCM4.o
 
 .debug_frame    0x0000000000000000      0x35c
  .debug_frame   0x0000000000000000       0xd4 ofiles/./src/itm_messages.o

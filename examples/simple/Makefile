@@ -13,6 +13,7 @@ GCC_DEFINE=
 
 CORTEX_TYPE=m7
 
+RELOC=-fdebug-prefix-map=$(PWD)=. -ffile-prefix-map=$(PWD)=.
 GCC_DEFINE=-D__STARTUP_CLEAR_BSS=1
 
 OLOC = ofiles
@@ -112,13 +113,13 @@ GC=-Wl,--gc-sections
 # Create map file
 MAP=-Wl,-Map=$(OLOC)/$(OUTFILE).map,--cref
 
-CFLAGS =  $(ARCH_FLAGS) $(STARTUP_DEFS) $(OPT_LEVEL) $(DEBUG_OPTS) \
+CFLAGS =  $(RELOC) $(ARCH_FLAGS) $(STARTUP_DEFS) $(OPT_LEVEL) $(DEBUG_OPTS) \
 		-ffunction-sections -fdata-sections -fmerge-constants -Wdouble-promotion -Wall \
 		-fno-common -c -ffreestanding -fno-builtin  -fmacro-prefix-map="../$(@D)/"=. -fstack-usage \
 		$(INCLUDE_PATHS)  $(GCC_DEFINE)
 
 ASFLAGS = -c $(DEBUG_OPTS) $(INCLUDE_PATHS) $(ARCH_FLAGS) $(GCC_DEFINE) -x assembler-with-cpp
-LDFLAGS += $(SPEC) $(ARCH_FLAGS) -Wl,--no-wchar-size-warning,--gc-sections -Wl,--sort-section=alignment $(MAP)
+LDFLAGS += $(RELOC) $(SPEC) $(ARCH_FLAGS) -Wl,--no-wchar-size-warning,--gc-sections -Wl,--sort-section=alignment $(MAP)
 
 OCFLAGS = --strip-unneeded
 
