@@ -1,0 +1,9 @@
+src/itm_messages.c:73:6:ITM_Enable	0	static
+src/itm_messages.c:79:6:ITM_Disable	0	static
+src/itm_messages.c:85:6:ITM_ChannelEnable	0	static
+src/itm_messages.c:91:6:ITM_ChannelDisable	0	static
+src/itm_messages.c:97:6:ITM_ChannelEnabled	0	static
+src/itm_messages.c:51:10:ITM_Send32	16	static
+src/itm_messages.c:57:10:ITM_SendString	24	static
+src/itm_messages.c:39:10:ITM_Send8	16	static
+src/itm_messages.c:45:10:ITM_Send16	16	static

@@ -1,0 +1,3 @@
+src/main.c:23:13:_sieve	0	static
+src/main.c:10:6:SystemInit	0	static
+src/main.c:56:5:main	8	static
